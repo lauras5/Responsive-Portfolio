@@ -1,0 +1,404 @@
+/* background image wasnt working with mobile or 
+safari so i did a background color instead */
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2017/06/06/06/03/freezing-earth-2376303_960_720.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    top:0;
+    left: 0;
+    background-size: cover;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    height: 96px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    border-bottom: 5px solid #cccccc;
+}
+
+h1 {
+    padding: 30px;
+    width: 235px;
+    margin-top: 0px;
+    text-align: center;
+    display: inline-block;
+    background-color: #4aaaa5;
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#top-menu {
+    display: inline-block;
+    margin-left: 428px;
+}
+
+.container {
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+form {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#name, #email, #message {
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+#message {
+    height: 70px;
+}
+
+#submit-btn {
+    display: block;
+    text-align: center;
+    width: 120px;
+    color: white;
+    background-color: #4aaaa5;
+    padding: 10px;
+}
+
+h2 {
+    margin-left: 30px;
+    margin-top: 40px;
+    text-align: center;
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h3 {
+    text-align: center;
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+p {
+    padding: 0px 30px 10px 30px;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #777777;
+}
+
+a:hover {
+    color: rgb(250, 203, 198);
+}
+
+#social {
+    margin: 0 auto;
+}
+
+.social-so, .social-li, .social-gh  {
+    width: 48px;
+    height: 48px;
+    margin: 20px 10px 30px 10px;
+}
+
+.social-gh {
+    background-position: -366px -158px;
+}
+
+.social-li {
+    background-position: -210px -54px;
+}
+
+.social-so, .social-li, .social-gh {
+    background-position: -158px -366px;
+}
+
+.social-gh:hover, .social-li:hover, .social-so:hover {
+    opacity: 0.5;
+}
+
+span {
+    text-align: center;
+}
+
+section {
+    float: left;
+    width: 650px;
+    margin: 20px 40px 100px 0;
+    background-color: white;
+}
+
+hr {
+    width: 93%;
+}
+
+#hrline {
+    width: 93%;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 15px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+figure, .foliopics {
+    display: inline-block;
+    background-color: white;
+    clear: both;
+    height: 175px;
+    width: 262px;
+}
+
+.foliopics:hover {
+    opacity: 0.5;
+}
+
+figure {
+    margin-right: 10px;
+}
+
+figcaption {
+    background-color: #4aaaa5;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    left: 0px;
+    padding: 10px;
+    color: white;
+    vertical-align:middle;
+    z-index: 1;
+}
+
+
+aside {
+    float: left;
+    width: 270px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+footer {
+    width: 100%;
+    clear: both;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 20px;
+    background-color: #666666;
+    border-top: 5px solid #4aaaa5;
+    text-align: center;
+    z-index: 3;
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        position: static;
+        display: block;
+        width: 100%;
+        background-color: white;
+        margin-top: -20px;
+    }
+
+    #profile-pic {
+        width: 295px;
+        height: 320px;
+    }
+
+    section {
+        width: 100%;
+        margin: 10px 0 10px 0;
+        text-align: center;
+        display: block;
+        padding: 25px 0 10px 0;
+    }
+
+    h2, h3 {
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+
+    #top-menu {
+        padding: 5px;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .container {
+        width: 95%;
+        margin: auto;
+        display: block;
+    }
+   
+    .foliopics {
+        display: block;
+        margin: auto;
+    }
+    
+    hr {
+        width: 99%;
+    }
+
+    aside {
+        display: block;
+        width: 100%;
+        height: 170px;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: white;
+    }
+
+    footer {
+        display: block;
+        width: 100%;
+        position: static;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width: 641px) {
+    
+    header {
+        position: static;
+        display: block;
+        width: 100%;
+        background-color: white;
+        margin-top: -20px;
+    }
+
+    h1 {
+        padding: 40px 0 20px 0;
+        width: 40%;
+        margin-left: 5%;
+        display: inline-block;
+    }
+
+    #top-menu {
+        padding: 5px;
+        display: inline-block;
+        margin-left: 10%;
+        text-align: right;
+    }
+
+    section {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    body {
+        display: block;
+        background-color: white;
+        width: 100%;
+    }
+
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    aside {
+        display: block;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+        background-color: white;
+    }
+
+    #hrline {
+        width: 95%;
+    }
+    
+    #social {
+        width: 100%;
+        margin: 0 0 50px 0;
+    }
+
+    footer {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+    header {
+        position: static;
+        display: block;
+        width: 100%;
+        background-color: white;
+        margin-top: -20px;
+    }
+
+    h1 {
+        padding: 40px 0 20px 0;
+        width: 40%;
+        margin-left: 15%;
+        display: inline-block;
+    }
+
+    #top-menu {
+        padding: 5px;
+        display: inline-block;
+        margin-left: 5%;
+        text-align: right;
+    }
+
+    section {
+        display: inline-block;
+        background-color: white;
+        width: 37%;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 0 0 0 15%;
+    }
+
+    aside {
+        display: inline-block;
+        width: 30%;
+        height: 200px;
+        margin-bottom: 15px;
+        background-color: white;
+    }
+
+    #hrline {
+        width: 95%;
+    }
+    
+    #social {
+        width: 100%;
+        margin: 0 0 100px 0;
+    }
+
+    footer {
+        display: block;
+        width: 100%;
+        clear: both;
+        padding: 20px;
+    }
+}
